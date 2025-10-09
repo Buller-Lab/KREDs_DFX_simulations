@@ -1,0 +1,41 @@
+<Residues>
+ <Residue name="DFX">
+      <Bond from="C1" to="O1"/>
+      <Bond from="C1" to="C4"/>
+      <Bond from="C1" to="H1"/>
+      <Bond from="C1" to="H2"/>
+      <Bond from="O1" to="C2"/>
+      <Bond from="C2" to="O2"/>
+      <Bond from="C2" to="H3"/>
+      <Bond from="C2" to="H4"/>
+      <Bond from="O2" to="C3"/>
+      <Bond from="C3" to="C4"/>
+      <Bond from="C3" to="C5"/>
+      <Bond from="C3" to="H5"/>
+      <Bond from="C4" to="O3"/>
+      <Bond from="C4" to="H6"/>
+      <Bond from="C5" to="C6"/>
+      <Bond from="C5" to="O4"/>
+      <Bond from="C5" to="H7"/>
+      <Bond from="C6" to="O3"/>
+      <Bond from="C6" to="O5"/>
+      <Bond from="C6" to="H8"/>
+      <Bond from="O4" to="C7"/>
+      <Bond from="C7" to="O5"/>
+      <Bond from="C7" to="H9"/>
+      <Bond from="C7" to="H10"/>
+ </Residue>
+ <Residue name="ISO">
+      <Bond from="O1" to="C1"/>
+      <Bond from="O1" to="H8"/>
+      <Bond from="C1" to="C2"/>
+      <Bond from="C1" to="C3"/>
+      <Bond from="C1" to="H1"/>
+      <Bond from="C2" to="H2"/>
+      <Bond from="C2" to="H3"/>
+      <Bond from="C2" to="H4"/>
+      <Bond from="C3" to="H5"/>
+      <Bond from="C3" to="H6"/>
+      <Bond from="C3" to="H7"/>
+</Residue>
+</Residues>
