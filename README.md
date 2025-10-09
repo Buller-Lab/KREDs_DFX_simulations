@@ -2,7 +2,7 @@
 
 # Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications
 
-In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of enzyme stability using MDTraj and EvoEF2.[2,3] 
+In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of enzyme stability related parameters using MDTraj and EvoEF2.[2,3] 
 
 [1] Guerra, João Victor da Silva, et al. "pyKVFinder: an efficient and integrable Python package for biomolecular cavity detection and characterization in data science." BMC bioinformatics 22.1 (2021): 607.
 
