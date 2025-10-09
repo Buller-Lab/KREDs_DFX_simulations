@@ -40,18 +40,7 @@ This code was developed and tested on the following hardware:
 ## Software requirements
 To create conda environments with necessary dependencies, run:
 ```bash
-conda env create --file sim.yml
-```
-```bash
-conda create -n cofolding_env python=3.11 -y
-conda activate cofolding_env
-git clone https://github.com/jwohlwend/boltz.git
-cd boltz
-pip install -e .[cuda]
-cd ..
-```
-```bash
-conda env create --file clustering_env.yml
+conda env create --file dfx_sim.yml
 ```
 # Instructions for use
 ## The followings scripts are provided:
