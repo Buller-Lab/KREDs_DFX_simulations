@@ -55,26 +55,36 @@ conda env create --file clustering_env.yml
 ```
 # Instructions for use
 ## The followings scripts are provided:
-- pocket_analysis.py (identification of cavities and calculation of their dimensions based on pdb input)
-- boltz2x_cofolding.py (Boltz-2 co-folding with 30 diffusion models per input yml)
-- identify_centroid.py (Clustering of 30 Boltz-2 poses using ligand RMSD and determination of centroid of biggest cluster) 
-## How to run the pocket analysis
+- MD_simulation.py (Custom MD simulation script for KRED solvent simulations)
+- RoG_analysis.py (Radius of Gyration analysis of all trajectories)
+- EvoEF2_batch.py (Total energy calculation of final simulation frames) 
+## How to run the MD simulations (recommended in screen or on HPC)
 Activate conda environment
 ```bash
-conda activate pykvfinder_env
+conda activate dfx_sim
 ```
-Run the pocket analysis (with default probe out and volume cutoffs)
+Run the MD simulation of KRED_36
 ```bash
-python analyze_pockets.py 1W4T.pdb --probe_out 8.0 --volume_cutoff 50.0
+python MD_sims/KRED_36/MD_simulation.py
 ```
-```bash
-python analyze_pockets.py 7QI3.pdb --probe_out 8.0 --volume_cutoff 50.0
-```
-## How to run the EvoEF2 energy calculation
-Activate conda environment
+The resulting trajectories will be found in subfolder trajectories_KRED_36
 
+Run the MD simulation of TaSADH_W110A
 ```bash
-conda activate evoef2_env
+python MD_sims/TaSADH_W110A/MD_simulation.py
+```
+The resulting trajectories will be found in subfolder trajectories_TaSADH_W110A
+
+## How to analyze the RoG of the trajectories
+Activate conda environment
+```bash
+conda activate dfx_sim
+```
+
+## How to calculate the EvoEF2 total energy 
+Activate conda environment
+```bash
+conda activate dfx_sim
 ```
 Navigate in working directory
 ```bash
@@ -84,6 +94,10 @@ Clone EvoEF2 repository
 ```bash
 git clone https://github.com/tommyhuangthu/EvoEF2.git
 ```
+Navigate to EvoEF2 folder
+```bash
+cd EvoEF2
+```
 Make EvoEF2 build executable
 ```bash
 chmod +x build.sh
@@ -92,20 +106,14 @@ Install EvoEF2
 ```bash
 bash build.sh
 ```
+Navigate back to ddG_calc folder
+```bash
+cd ..
+```
 Run the energy calculation if the input folder in one batch generating results in the output folder
 ```bash
 python EvoEF2_batch.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outputs
  
-```
-
-## How to run the MDTraj & scikit-learn clustering to derive a representative conformation
-Activate conda environment
-```bash
-conda activate clustering_env
-```
-Run the clustering (with input and output folder specified; only one example is shown and path needs to be adapted for the other variants)
-```bash
-python identify_centroid.py --input_folder boltz_results_05PaAT_chimera_Substrate/predictions/05PaAT_chimera_Substrate --output_folder centroid_05PaAT_chimera_Substrate
 ```
 
 # References
