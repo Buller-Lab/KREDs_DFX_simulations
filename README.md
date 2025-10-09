@@ -70,14 +70,31 @@ python analyze_pockets.py 1W4T.pdb --probe_out 8.0 --volume_cutoff 50.0
 ```bash
 python analyze_pockets.py 7QI3.pdb --probe_out 8.0 --volume_cutoff 50.0
 ```
-## How to run the Boltz-2 cofolding (with 30 diffusions)
+## How to run the EvoEF2 energy calculation
 Activate conda environment
+
 ```bash
-conda activate cofolding_env
+conda activate evoef2_env
 ```
-Run the cofolding (with input and output folder specified)
+Navigate in working directory
 ```bash
-python boltz2x_cofolding.py --input_folder cofolding_inputs
+ cd ddG_calc
+```
+Clone EvoEF2 repository
+```bash
+git clone https://github.com/tommyhuangthu/EvoEF2.git
+```
+Make EvoEF2 build executable
+```bash
+chmod +x build.sh
+```
+Install EvoEF2
+```bash
+bash build.sh
+```
+Run the energy calculation if the input folder in one batch generating results in the output folder
+```bash
+python batch_evoef2.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outputs
  
 ```
 
