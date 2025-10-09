@@ -66,7 +66,14 @@ Activate conda environment
 ```bash
 conda activate dfx_sim
 ```
-
+Run analysis for KRED_36
+```bash
+python RoG_analysis/analyze_RoG.py --input_folder MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_analysis/KRED_36
+```
+Run analysis for TaSADH_W110A
+```bash
+python RoG_analysis/analyze_RoG.py --input_folder MD_sims/TaSADH_W110A/trajectories_TaSADH_W110A --output_folder RoG_analysis/TaSADH_W110A
+```
 ## How to calculate the EvoEF2 total energy 
 Activate conda environment
 ```bash
@@ -98,11 +105,11 @@ cd ..
 ```
 Run the energy calculation if the input folder in one batch generating results in the output folder
 ```bash
-python EvoEF2_batch.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outputs
+python EvoEF2_batch.py --input_folder EvoEF2_inputs --output_folder EvoEF2_outputs
  
 ```
 
 # References
 
-If you utilize this code, please cite:
+If you utilize this code, please cite (as soon as published):
 Fatma Feyza Özgen et al. Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications (submitted)
