@@ -2,17 +2,14 @@
 
 # Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications
 
-In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of enzyme stability related parameters using MDTraj and EvoEF2.[2,3] 
+In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of enzyme stability related parameters using MDTraj [2] and EvoEF2 [3].
 
-[1] Guerra, João Victor da Silva, et al. "pyKVFinder: an efficient and integrable Python package for biomolecular cavity detection and characterization in data science." BMC bioinformatics 22.1 (2021): 607.
+[1] Eastman, P., Galvelis, R., Peláez, R. P., Abreu, C. R., Farr, S. E., Gallicchio, E., ... & Markland, T. E. (2023). OpenMM 8: molecular dynamics simulation with machine learning potentials. The Journal of Physical Chemistry B, 128(1), 109-116.
 
-[2] Wohlwend, Jeremy, et al. "Boltz-1 democratizing biomolecular interaction modeling." BioRxiv (2025): 2024-11.
+[2] McGibbon, R. T., Beauchamp, K. A., Harrigan, M. P., Klein, C., Swails, J. M., Hernández, C. X., ... & Pande, V. S. (2015). MDTraj: a modern open library for the analysis of molecular dynamics trajectories. Biophysical journal, 109(8), 1528-1532.
 
-[3] Passaro, Saro, et al. "Boltz-2: Towards accurate and efficient binding affinity prediction." BioRxiv (2025): 2025-06.
+[3] Huang, X., Pearce, R., & Zhang, Y. (2020). EvoEF2: accurate and fast energy function for computational protein design. Bioinformatics, 36(4), 1135-1142.
 
-[4] McGibbon, Robert T., et al. "MDTraj: a modern open library for the analysis of molecular dynamics trajectories." Biophysical journal 109.8 (2015): 1528-1532.
-
-[5] Pedregosa, Fabian, et al. "Scikit-learn: Machine learning in Python." the Journal of machine Learning research 12 (2011): 2825-2830.
 
 # Installation
 
