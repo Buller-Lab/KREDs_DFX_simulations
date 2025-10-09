@@ -94,7 +94,7 @@ bash build.sh
 ```
 Run the energy calculation if the input folder in one batch generating results in the output folder
 ```bash
-python batch_evoef2.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outputs
+python EvoEF2_batch.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outputs
  
 ```
 
