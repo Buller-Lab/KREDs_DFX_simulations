@@ -1,8 +1,7 @@
-from simtk.openmm import app
-import simtk.openmm as mm
-from simtk import unit
+from openmm import app
+import openmm as mm
+from openmm import unit
 from sys import stdout
-import parmed as pmd
 from pdbfixer import PDBFixer
 from mdtraj.reporters import HDF5Reporter
 import mdtraj as mdt
@@ -11,7 +10,7 @@ import numpy as np
 
 boxtype = 'rectangular'
 box_padding = 1.78
-traj_folder = 'KRED_36'
+traj_folder = 'trajectories_KRED_36'
 production_steps = 50000000
 gpu_index = '1'
 sim_force_field = 'amber14-all.xml'
