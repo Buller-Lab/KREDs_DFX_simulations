@@ -2,7 +2,6 @@ from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit
 from sys import stdout
-import parmed as pmd
 from pdbfixer import PDBFixer
 from mdtraj.reporters import HDF5Reporter
 import mdtraj as mdt
@@ -11,7 +10,7 @@ import numpy as np
 
 boxtype = 'rectangular'
 box_padding = 1.78
-traj_folder = 'TeSADH_W110A'
+traj_folder = 'trajectories_TeSADH_W110A'
 production_steps = 50000000
 gpu_index = '0'
 sim_force_field = 'amber14-all.xml'
@@ -185,4 +184,5 @@ for i in range(5):
     positions = state_prod.getPositions()
     app.PDBFile.writeFile(simulation.topology, positions, open(f'{traj_folder}/production_{i}.pdb', 'w'), keepIds=True)
     simulation.saveCheckpoint(f'{traj_folder}/production_{i}.chk')
+
     del simulation
