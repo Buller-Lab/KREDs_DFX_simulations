@@ -68,11 +68,11 @@ conda activate dfx_sim
 ```
 Run analysis for KRED_36
 ```bash
-python RoG_analysis/analyze_RoG.py --input_folder MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_analysis/KRED_36
+python RoG_analysis/RoG_analysis.py --input_folder MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_analysis/KRED_36
 ```
 Run analysis for TaSADH_W110A
 ```bash
-python RoG_analysis/analyze_RoG.py --input_folder MD_sims/TaSADH_W110A/trajectories_TaSADH_W110A --output_folder RoG_analysis/TaSADH_W110A
+python RoG_analysis/RoG_analysis.py --input_folder MD_sims/TaSADH_W110A/trajectories_TaSADH_W110A --output_folder RoG_analysis/TaSADH_W110A
 ```
 ## How to calculate the EvoEF2 total energy 
 Activate conda environment
