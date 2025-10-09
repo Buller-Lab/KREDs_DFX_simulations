@@ -108,4 +108,4 @@ python EvoEF2_batch.py --input_folder EvoEF2_inputs --output_colder EvoEF2_outpu
 # References
 
 If you utilize this code, please cite:
-Daniela Schaub, Alice Lessing et al. A tailored enzyme cascade facilitates DNA-encoded library technology and gives access to a broad substrate scope, 23 September 2025, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-7598475/v1]
+Fatma Feyza Özgen et al. Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications (submitted)
