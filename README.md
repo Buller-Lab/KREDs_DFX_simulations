@@ -49,12 +49,21 @@ Activate conda environment
 ```bash
 conda activate dfx_sim
 ```
+Navigate to KRED_36 folder
+```bash
+cd MD_sims/KRED_36
+```
 Run the MD simulation of KRED_36
 ```bash
 python MD_sims/KRED_36/MD_simulation.py
 ```
 The resulting trajectories will be found in subfolder trajectories_KRED_36
 
+
+Navigate to TaSADH_W110A folder
+```bash
+cd ../TaSADH_W110A
+```
 Run the MD simulation of TaSADH_W110A
 ```bash
 python MD_sims/TaSADH_W110A/MD_simulation.py
