@@ -87,13 +87,13 @@ Run analysis for TeSADH_W110A
 python RoG_analysis.py --input_folder ../MD_sims/TeSADH_W110A/trajectories_TeSADH_W110A --output_folder RoG_TeSADH_W110A
 ```
 ## How to calculate the EvoEF2 total energy 
-Activate conda environment
+Ensure conda environment is activated
 ```bash
 conda activate dfx_sim
 ```
 Navigate in working directory
 ```bash
- cd ddG_calc
+ cd ../ddG_calc
 ```
 Clone EvoEF2 repository
 ```bash
