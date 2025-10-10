@@ -53,22 +53,21 @@ Navigate to KRED_36 folder
 ```bash
 cd MD_sims/KRED_36
 ```
-Run the MD simulation of KRED_36
+Run the MD simulation of KRED_36. The resulting trajectories can be found in subfolder trajectories_KRED_36
 ```bash
-python MD_sims/KRED_36/MD_simulation.py
+python MD_simulation.py
 ```
-The resulting trajectories will be found in subfolder trajectories_KRED_36
+
 
 
 Navigate to TeSADH_W110A folder
 ```bash
 cd ../TeSADH_W110A
 ```
-Run the MD simulation of TeSADH_W110A
+Run the MD simulation of TeSADH_W110A. The resulting trajectories can be found in subfolder trajectories_TeSADH_W110A
 ```bash
 python MD_simulation.py
 ```
-The resulting trajectories will be found in subfolder trajectories_TeSADH_W110A
 
 ## How to analyze the RoG of the trajectories
 Activate conda environment
