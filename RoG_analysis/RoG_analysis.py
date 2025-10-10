@@ -10,8 +10,8 @@ def main():
     # Parse command-line arguments
     try:
         parser = argparse.ArgumentParser(description='Compute radius of gyration from MD trajectories and save to CSV.')
-        parser.add_argument('--input-folder', required=True, help='Path to folder containing trajectory files')
-        parser.add_argument('--output-folder', required=True, help='Path to folder for saving output CSV')
+        parser.add_argument('--input_folder', required=True, help='Path to folder containing trajectory files')
+        parser.add_argument('--output_folder', required=True, help='Path to folder for saving output CSV')
         args = parser.parse_args()
     except argparse.ArgumentError as e:
         print(f"Error parsing command-line arguments: {e}")
