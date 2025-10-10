@@ -60,15 +60,15 @@ python MD_sims/KRED_36/MD_simulation.py
 The resulting trajectories will be found in subfolder trajectories_KRED_36
 
 
-Navigate to TaSADH_W110A folder
+Navigate to TeSADH_W110A folder
 ```bash
-cd ../TaSADH_W110A
+cd ../TeSADH_W110A
 ```
-Run the MD simulation of TaSADH_W110A
+Run the MD simulation of TeSADH_W110A
 ```bash
-python MD_sims/TaSADH_W110A/MD_simulation.py
+python MD_sims/TeSADH_W110A/MD_simulation.py
 ```
-The resulting trajectories will be found in subfolder trajectories_TaSADH_W110A
+The resulting trajectories will be found in subfolder trajectories_TeSADH_W110A
 
 ## How to analyze the RoG of the trajectories
 Activate conda environment
@@ -79,9 +79,9 @@ Run analysis for KRED_36
 ```bash
 python RoG_analysis/RoG_analysis.py --input_folder MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_analysis/KRED_36
 ```
-Run analysis for TaSADH_W110A
+Run analysis for TeSADH_W110A
 ```bash
-python RoG_analysis/RoG_analysis.py --input_folder MD_sims/TaSADH_W110A/trajectories_TaSADH_W110A --output_folder RoG_analysis/TaSADH_W110A
+python RoG_analysis/RoG_analysis.py --input_folder MD_sims/TeSADH_W110A/trajectories_TeSADH_W110A --output_folder RoG_analysis/TeSADH_W110A
 ```
 ## How to calculate the EvoEF2 total energy 
 Activate conda environment
