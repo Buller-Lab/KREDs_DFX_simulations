@@ -70,17 +70,21 @@ python MD_simulation.py
 ```
 
 ## How to analyze the RoG of the trajectories
-Activate conda environment
+Ensure conda environment is activated
 ```bash
 conda activate dfx_sim
 ```
+Navigate to RoG_analysis folder
+```bash
+cd ../../RoG_analysis
+```
 Run analysis for KRED_36
 ```bash
-python RoG_analysis/RoG_analysis.py --input_folder MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_analysis/KRED_36
+python RoG_analysis.py --input_folder ../MD_sims/KRED_36/trajectories_KRED_36 --output_folder RoG_KRED_36
 ```
 Run analysis for TeSADH_W110A
 ```bash
-python RoG_analysis/RoG_analysis.py --input_folder MD_sims/TeSADH_W110A/trajectories_TeSADH_W110A --output_folder RoG_analysis/TeSADH_W110A
+python RoG_analysis.py --input_folder ../MD_sims/TeSADH_W110A/trajectories_TeSADH_W110A --output_folder RoG_TeSADH_W110A
 ```
 ## How to calculate the EvoEF2 total energy 
 Activate conda environment
