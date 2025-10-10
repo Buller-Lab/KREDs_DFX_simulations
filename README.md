@@ -66,7 +66,7 @@ cd ../TeSADH_W110A
 ```
 Run the MD simulation of TeSADH_W110A
 ```bash
-python MD_sims/TeSADH_W110A/MD_simulation.py
+python MD_simulation.py
 ```
 The resulting trajectories will be found in subfolder trajectories_TeSADH_W110A
 
