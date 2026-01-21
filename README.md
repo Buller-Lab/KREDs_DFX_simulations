@@ -2,13 +2,11 @@
 
 # Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications
 
-In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of enzyme stability related parameters using MDTraj [2] and EvoEF2 [3].
+In this repository we provide the code that was used for MD simulations in diformylxylose (DFX) using OpenMM [1] and analysis of radius of gyration using MDTraj [2].
 
 [1] Eastman, P., Galvelis, R., Peláez, R. P., Abreu, C. R., Farr, S. E., Gallicchio, E., ... & Markland, T. E. (2023). OpenMM 8: molecular dynamics simulation with machine learning potentials. The Journal of Physical Chemistry B, 128(1), 109-116.
 
 [2] McGibbon, R. T., Beauchamp, K. A., Harrigan, M. P., Klein, C., Swails, J. M., Hernández, C. X., ... & Pande, V. S. (2015). MDTraj: a modern open library for the analysis of molecular dynamics trajectories. Biophysical journal, 109(8), 1528-1532.
-
-[3] Huang, X., Pearce, R., & Zhang, Y. (2020). EvoEF2: accurate and fast energy function for computational protein design. Bioinformatics, 36(4), 1135-1142.
 
 
 # Installation
@@ -43,7 +41,7 @@ conda env create --file dfx_sim.yml
 ## The followings scripts are provided:
 - MD_simulation.py (Custom MD simulation script for KRED solvent simulations)
 - RoG_analysis.py (Radius of Gyration analysis of all trajectories)
-- EvoEF2_batch.py (Total energy calculation of final simulation frames) 
+
 ## How to run the MD simulations (recommended in screen or on HPC)
 Activate conda environment
 ```bash
@@ -85,40 +83,6 @@ python RoG_analysis.py --input_folder ../MD_sims/KRED_36/trajectories_KRED_36 --
 Run analysis for TeSADH_W110A
 ```bash
 python RoG_analysis.py --input_folder ../MD_sims/TeSADH_W110A/trajectories_TeSADH_W110A --output_folder RoG_TeSADH_W110A
-```
-## How to calculate the EvoEF2 total energy 
-Ensure conda environment is activated
-```bash
-conda activate dfx_sim
-```
-Navigate in working directory
-```bash
- cd ../ddG_calc
-```
-Clone EvoEF2 repository
-```bash
-git clone https://github.com/tommyhuangthu/EvoEF2.git
-```
-Navigate to EvoEF2 folder
-```bash
-cd EvoEF2
-```
-Make EvoEF2 build executable
-```bash
-chmod +x build.sh
-```
-Install EvoEF2
-```bash
-bash build.sh
-```
-Navigate back to ddG_calc folder
-```bash
-cd ..
-```
-Run the energy calculation if the input folder in one batch generating results in the output folder
-```bash
-python EvoEF2_batch.py --input_folder EvoEF2_input --output_folder EvoEF2_output
- 
 ```
 
 # References
