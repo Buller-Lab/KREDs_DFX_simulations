@@ -123,5 +123,6 @@ python EvoEF2_batch.py --input_folder EvoEF2_input --output_folder EvoEF2_output
 
 # References
 
-If you utilize this code, please cite (as soon as published):
-Fatma Feyza Özgen et al. Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications (submitted)
+If you utilize this code,:
+Fatma Feyza Özgen et al. Biomass-derived Diformylxylose as a Renewable Solvent for Biocatalysis Applications (2026), ChemSusChem
+https://doi.org/10.1002/cssc.202502273
